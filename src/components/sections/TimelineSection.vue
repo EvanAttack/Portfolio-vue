@@ -126,7 +126,6 @@ useGsap(({ gsap, ScrollTrigger }) => {
             :class="{ active: step.key === 'objectif' }"
             :data-step="step.key"
           >
-            <div :class="step.isDot2 ? 'dot2' : 'dot'"></div>
             <h5>{{ step.title }}</h5>
           </div>
         </div>

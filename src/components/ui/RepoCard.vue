@@ -12,10 +12,10 @@ defineProps({
     <div>
       <div class="d-flex justify-content-between align-items-start mb-2">
         <h5 class="h6 mb-0">{{ repo.name }}</h5>
-        <small class="text-muted">{{ repo.lang }}</small>
+        <small class="">{{ repo.lang }}</small>
       </div>
 
-      <p class="small text-muted mb-2">
+      <p class="small  mb-2">
         {{ repo.desc }}
       </p>
     </div>
@@ -31,21 +31,21 @@ defineProps({
         Voir
       </a>
 
-      <div class="repo-stats text-end small text-muted">
+      <div class="repo-stats text-end small ">
         <div>
-          <svg class="bi pe-none" width="16" height="16" aria-hidden="true">
+          <svg class="bi pe-none repo-icon" width="16" height="16" aria-hidden="true">
             <use xlink:href="#star"></use>
           </svg>
           {{ repo.stars }}
         </div>
         <div>
-          <svg class="bi pe-none" width="16" height="16" aria-hidden="true">
+          <svg class="bi pe-none repo-icon" width="16" height="16" aria-hidden="true">
             <use xlink:href="#watching"></use>
           </svg>
           {{ repo.watchers }}
         </div>
         <div>
-          <svg class="bi pe-none" width="16" height="16" aria-hidden="true">
+          <svg class="bi pe-none repo-icon" width="16" height="16" aria-hidden="true">
             <use xlink:href="#forks"></use>
           </svg>
           {{ repo.forks }}

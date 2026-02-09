@@ -346,6 +346,16 @@ body {
   row-gap: 2.5rem;
 }
 
+.repo-icon {
+  color: var(--text-primary);
+}
+
+.repo-icon,
+.repo-icon use{
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 .repo-card {
   height: 100%;
   padding: 1.4rem 1.4rem 1.2rem;
@@ -1182,4 +1192,9 @@ footer p {
   .ndi-gallery .boxes-container {
     grid-template-columns: 1fr;
   }
+}
+
+.repos-search .form-control::placeholder{
+  color: var(--text-muted);
+  opacity: 1;
 }
